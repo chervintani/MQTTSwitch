@@ -3,53 +3,58 @@
 <head>
   <title>ChervMOWS</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/a1813e4a30.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   <link rel="icon" href="src/logo.png" type="image/gif" sizes="16x16">
   <link href="src/style.css" rel="stylesheet">
 </head>
-
-
 <body>
-  <!-- Image and text -->
-  <nav class="navbar navbar-dark bg-primary sticky-top">
-    <a href="#" id="header">
-      <h2><b>MQTT Switch</h2>
-    </a>
-  </nav>
-  <div class="jumbotron text-center">
-    <h5>Powered by:</h5>
-    <img src="https://mosquitto.org/images/mosquitto-text-side-28.png" border="0" alt="Null">
-    <br><br>
-    <div class="card-deck">
-
-      <div class="card">
-        <div class="card-header" style="background: #428eff; color: white">Switch</div>
-        <div class="card-body">
-          <form>
-            <div class="form-group row">
-              <label for="email_address" class="col-md-4 col-form-label text-md-right"><b></b></label>
-              <div class="col-md-6">
-                <button type="button" id="on" class="btn btn-success btn-lg btn-block">On</button>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="email_address" class="col-md-4 col-form-label text-md-right"><b></b></label>
-              <div class="col-md-6">
-                <button type="button" id="off" class="btn btn-danger btn-lg btn-block">Off</button>
-              </div>
-            </div>
-          </form>
+    <div class="container">
+      
+      <h2>Light bulb</h2>
+      <!-- <label class="switch">
+          <input type="checkbox" >
+          <span class="slider round" id="on"></span>
+        </label> -->
+        <label class="switch">
+          <input type="checkbox" checked id="game">
+          <span class="slider round" id="on"></span>
+          <span class="absolute-no" id="off">ON</span>
+        </label>
+        <br><br><br><br>
+      <a class="bulb-light">
+        
+        <div id="light"></div>
+        
+        <div id="bulb">
+          <div class="bulb-top">
+            <div class="reflection"></div>
+          </div>
+          <div class="bulb-middle-1"></div>
+          <div class="bulb-middle-2"></div>
+          <div class="bulb-middle-3"></div>
+          <div class="bulb-bottom"></div>
         </div>
-      </div>
+          
+        <div id="base">
+          <div class="screw-top"></div>
+          <div class="screw-a"></div>
+          <div class="screw-b"></div>
+          <div class="screw-a"></div>
+          <div class="screw-b"></div>
+          <div class="screw-a"></div>
+          <div class="screw-b"></div>
+          <div class="screw-c"></div>
+          <div class="screw-d"></div>
+        </div>
+      </a>
     </div>
-    <br>
-  </div>
-</body>
-<footer class="bg-white">
+  </body>
+<!-- <footer class="bg-white">
   <div class="container py-3">
     <ul class="list-inline text-center">
       <li class="list-inline-item lead"><b>Created by: Chervz@2021</b></li><br>
@@ -58,7 +63,7 @@
         </a></li>
     </ul>
   </div>
-</footer>
+</footer> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js" integrity="sha256-H9jAz//QLkDOy/nzE9G4aYijQtkLt9FvGmdUTwBk6gs="
   crossorigin="anonymous"></script>
 <script src="./scripts/browser-mqtt.js"></script>

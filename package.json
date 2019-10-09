@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/chervintani/chervintani.github.io#readme",
   "dependencies": {
+    "bootstrap-switch": "^3.4.0",
+    "bootstrap-toggle": "^2.2.2",
     "express": "^4.17.1"
   },
   "devDependencies": {},

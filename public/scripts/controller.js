@@ -1,4 +1,6 @@
-$('#off').prop("disabled", true);
+$('#game').click(function () {
+  $('body').toggleClass('night');
+});
 
 client = mqtt.connect("wss://test.mosquitto.org:8081/mqtt")
 client.subscribe("chervz/device/status")
@@ -10,14 +12,11 @@ $('#on').on("click", function () {
   client.on("message", function (topic, payload) {
     console.log([topic, payload].join(": "));
   })
-  $(this).prop("disabled", true);
-  $('#off').prop("disabled", false);
+
 })
 
 $('#off').on("click", function () {
   client.publish("chervz/device/status", "Turned off: " + moment().format('MMMM Do YYYY, h:mm:ss a'));
   // client.end();
-  $(this).prop("disabled", true);
-  $('#on').prop("disabled", false);
 })
 
