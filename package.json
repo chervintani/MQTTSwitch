@@ -1,5 +1,5 @@
 {
-  "name": "chervintani.github.io",
+  "name": "mqttswitch",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/chervintani/chervintani.github.io.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Chervin Tanilon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/chervintani/chervintani.github.io/issues"
@@ -20,8 +20,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {},
-  "description": "",
   "engines": {
     "node": "10.15"
-  }
+  },
+  "description": ""
 }
